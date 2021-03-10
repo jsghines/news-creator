@@ -1,0 +1,5 @@
+FROM postgres:13.2 AS base
+
+ENV POSTGRES_PASSWORD = "buns"
+ENV POSTGRES_USER = "jhines"
+ENV POSTGRES_DB = "FeedCreation"

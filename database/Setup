@@ -1,0 +1,9 @@
+//1. docker volume create postgres-feedcreation
+//2. docker build . --tag postgres-feed
+1. docker run -d `
+    -e PGDATA=/var/lib/postgresql/data/pgdata `
+    -e POSTGRES_PASSWORD=mysecretpassword `
+    -v /custom/mount:/var/lib/postgresql/data `
+    --name postgres-feed `
+    -p 5050:5432 `
+    postgres:13.2

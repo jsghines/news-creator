@@ -1,0 +1,16 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5050,
+    "username": "postgres",
+    "password": "mysecretpassword",
+    "database": "postgres",
+    "entities": ["entities/*.ts"],
+    "logging": true,
+    "synchronize": true,
+    "migrationsTableName": "custom_migration_table",
+    "migrations": ["migrations/*.ts"],
+    "cli": {
+        "migrationsDir": "migrations"
+    }
+  }
