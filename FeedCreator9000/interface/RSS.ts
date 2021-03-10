@@ -1,4 +1,3 @@
-import { RSSFeedInterface } from "./RSSFeed";
 import { RSSItemInterface } from "./RSSItem";
 
 export interface RSSInterface {
@@ -13,8 +12,6 @@ export interface RSSInterface {
     language: string;
 
     rssItems?: RSSItemInterface[];
-
-    rssFeed?: RSSFeedInterface;
 
     rssFeedId?: number;
 }

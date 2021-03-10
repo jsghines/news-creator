@@ -1,4 +1,4 @@
-import { RSSInterface } from "./rss";
+import { RSSInterface } from "./RSS";
 
 export interface RSSItemInterface {
     id: number;

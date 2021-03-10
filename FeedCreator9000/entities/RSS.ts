@@ -1,6 +1,6 @@
 import { Field, ID, Int, ObjectType } from "type-graphql";
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, OneToOne, JoinColumn } from "typeorm";
-import { RSSInterface } from "../interface/rss";
+import { RSSInterface } from "../interface/RSS";
 import { RSSItem } from "./RSSItem";
 
 @ObjectType({ description: "RSS Data" })
