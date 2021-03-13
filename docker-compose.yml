@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  db:
+    image: "postgres:13.2"
+    ports:
+      - "5050:5432"
+    volumes:
+      - "./custom:/var/lib/postgresql/data"
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_PASSWORD=mysecretpassword
+  feedcreatorbackend:
+    build: ./FeedCreator9000
+    image: "feedcreatorbackend"
+    depends_on: 
+      - db
+    ports:
+      - "8787:4000"
